@@ -46,3 +46,11 @@ function stringWillFill(someString, numberOfTimes) {
     } return array
 }
 console.log(stringWillFill("some string", 4));
+
+// EX 5
+
+function pickARandomNumber(array) {
+
+    return array[Math.floor(Math.random() * array.length)];
+}
+console.log(pickARandomNumber([254, 45, 212, 365, 2543]));
