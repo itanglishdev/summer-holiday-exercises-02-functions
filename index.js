@@ -36,3 +36,13 @@ function switchPosition(currentPosition, newPosition) {
 }
 
 console.log(switchPosition(1, 4));
+
+// EX 4
+
+function stringWillFill(someString, numberOfTimes) {
+    const array = [];
+    for (let i = 0; i < numberOfTimes; i++) {
+        array.push(someString);
+    } return array
+}
+console.log(stringWillFill("some string", 4));
