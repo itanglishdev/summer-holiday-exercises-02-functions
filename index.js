@@ -54,3 +54,13 @@ function pickARandomNumber(array) {
     return array[Math.floor(Math.random() * array.length)];
 }
 console.log(pickARandomNumber([254, 45, 212, 365, 2543]));
+
+
+// EX 6
+
+function findASpecificNumber(array, specificElement) {
+    if (array.includes(specificElement)) {
+        return true
+    } return false
+}
+console.log(findASpecificNumber([2, 5, 9, 6], 6));
