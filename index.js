@@ -10,3 +10,15 @@ function generateAnArray(lowestInt, highestInteger) {
 }
 
 console.log(generateAnArray(-4, 7));
+
+//  EX 2
+
+function generateASpecifiedLengthArray(firstInteger, secondInteger) {
+    const newArray = [];
+    let value = 0;
+    for (let i = 0; i < secondInteger; i++) {
+        value = firstInteger + i;
+        newArray.push(value);
+    } return newArray
+}
+console.log(generateASpecifiedLengthArray(-6, 4));
