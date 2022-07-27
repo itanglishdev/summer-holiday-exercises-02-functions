@@ -22,3 +22,17 @@ function generateASpecifiedLengthArray(firstInteger, secondInteger) {
     } return newArray
 }
 console.log(generateASpecifiedLengthArray(-6, 4));
+
+// EX 3
+
+function switchPosition(currentPosition, newPosition) {
+    const startingArray = [10, 20, 30, 40, 50];
+    let firstElement = startingArray[currentPosition];
+    let secondElement = startingArray[newPosition];
+    const finalArray = [];
+    startingArray.splice(currentPosition, 1, secondElement);
+    startingArray.splice(newPosition, 1, firstElement);
+    return startingArray;
+}
+
+console.log(switchPosition(1, 4));
