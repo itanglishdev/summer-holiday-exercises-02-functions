@@ -64,3 +64,18 @@ function findASpecificNumber(array, specificElement) {
     } return false
 }
 console.log(findASpecificNumber([2, 5, 9, 6], 6));
+
+// EX 7
+
+function mergeTwoArrays(arrayOne, arrayTwo) {
+    let newArray = []
+    for (let i = 0; i < arrayOne.length; i++) {
+        for (let j = 0; j < arrayTwo.length; j++) {
+            if (arrayOne[i] === arrayTwo[j]) {
+                arrayTwo.splice([j], 1)
+            }
+        }
+        newArray = arrayOne.concat(arrayTwo)
+    } return (newArray)
+}
+console.log(mergeTwoArrays([1, 2, 3,], [2, 30, 1]));
