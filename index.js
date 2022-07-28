@@ -96,8 +96,7 @@ console.log(remove([NaN, 0, 15, false, -22, '', undefined, 47, null]));
 // EX 9
 
 function allTheSquareOfTheArray(array) {
-    const finalArray = []
-    let squaredNum = 0;
+
     for (let i = 0; i < array.length; i++) {
         array[i] = Math.pow(array[i], 2);
     } return array
